@@ -1,4 +1,5 @@
 using TodoApp.Api.Data;
+using TodoApp.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,5 +15,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.MapGet("/", () => "Hello World!");
+
+app.MapAuthEndPoints();
 
 app.Run();
