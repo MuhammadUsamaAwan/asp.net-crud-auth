@@ -1,0 +1,11 @@
+POST http://localhost:5046/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "usama@test.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:5046/todos HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidXNhbWEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJ1c2FtYUB0ZXN0LmNvbSIsImV4cCI6MTczMzQ3NDA4NiwiaXNzIjoieW91ci1pc3N1ZXIiLCJhdWQiOiJ5b3VyLWF1ZGllbmNlIn0.GE_QVfvDrK8q4h7jDzogIRDivBOVKp2sv0pkvwikzwc
